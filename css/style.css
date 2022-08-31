@@ -1,0 +1,372 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+/*CSS VERIABLE*/
+/*navigationbar*/
+
+#navbar{
+    display: flex;
+    align-items: center;
+    position: relative;
+    top: 0%;
+}
+
+
+#navbar::before{
+    content: "";
+    background-color: black;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 0px;
+    left: 0px;
+    z-index: -1;
+    opacity: 0.4;
+}
+/*logo and image*/
+#logo{
+    margin: 8px 34px ;
+}
+#logo img{
+    height: 56px;
+    margin: 5px 8px;
+
+}
+
+/*list item*/
+
+#navbar ul{
+    display: flex;
+    font-family: 'Baloo Bhai', cursive;
+}
+#navbar ul li{
+    list-style: none;
+    font-size: 1.3rem;
+} 
+#navbar ul li a{
+    color: white;
+    padding: 3px 22px ;
+    display: block;
+    border-radius: 20px;
+    text-decoration: none;
+}
+#navbar ul li a:hover{
+    color: black;
+    background-color: white;
+}
+
+/*Home section*/
+
+#home{
+    display: flex;
+    flex-direction: column;
+    padding: 3px 200px;
+    justify-content: center;
+    align-items: center;   
+    height: 550px; 
+}
+
+#home::before{
+    content: "";
+    background:url('../fontpage.jpg') no-repeat center center/cover;
+    position: absolute;
+    height: 700px;
+    width: 100%;
+    z-index: -1;
+    top: 0px;
+    left: 0px;
+    opacity: .89;
+}
+
+#home h1{
+    color: white;
+    text-align: center;
+    text-transform: capitalize;
+    font-family: 'Bree Serif', serif;
+}
+
+#home p{
+    color: white;
+    text-align: center;
+    font-size: 1.5rem;
+    font-family: 'Bree Serif', serif;
+}
+
+
+#home-1::before{
+    content: "";
+    background:url('../about.jpg') no-repeat center center/cover;
+    position: absolute;
+    height: 740px;
+    width: 100%;
+    z-index: -1;
+    top: 0px;
+    left: 0px;
+    opacity: .89;
+}
+
+#home-1 h1{
+    align-items: center;
+    color: black;
+    text-align: center;
+    text-transform: capitalize;
+    font-family: 'Bree Serif', serif;
+}
+#home-1 h3{
+    color: #f44366;
+    text-align: center;
+    font-weight: 15px;
+    text-transform: capitalize;
+    font-family: 'Bree Serif', serif;
+}
+
+#home-1 h4{
+    color: #f44366;
+    text-align: center;
+    font-weight: 15px;
+    text-transform: capitalize;
+    font-family: 'Bree Serif', serif;
+}
+#home-1 p{
+    color:black;
+    text-align: center;
+    font-size: 1.5rem;
+    font-family: 'Bree Serif', serif;
+}
+
+/*services section*/
+.services-conteiner h1{
+    margin-top: 70px;
+}
+
+#services{
+    margin: 34px;
+    display: flex;
+}
+#services .box:hover{
+    box-shadow:  0 0 20px 0px rgba(0, 0, 0, 0.2) ;
+}
+#services .box{
+    cursor: pointer;
+    border:  2px solid brown;
+    padding: 34px;
+    margin: 25px 6px;
+    border-radius: 28px;
+    background-color: #f2f2f2;
+}
+
+#services .box img{
+    height: 160px;
+    margin: auto;
+    display: block;
+}
+
+#servicses .box p{
+    font-family: 'Bree Serif', serif;
+
+}
+
+/*clints section*/
+#client-section{
+    position: relative;
+    height: 344px;
+}
+#client-section::before{
+    content: "";
+    position: absolute;
+    background:url(../hotel.jpg) ;
+    width: 100%;
+    height: 350px;
+    z-index: -1;
+    opacity: 0.3;
+}
+#clients{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+#clients img{
+    height: 124px;
+}
+
+.clients-item{
+    padding: 34px;
+}
+
+/*contact Section*/
+
+#contact{
+    position: relative;
+}
+#contact::before{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    opacity: 0.7;
+    background: url(../rename.jpg) no-repeat center center/cover;
+}
+ 
+
+#contact-box{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    padding-bottom: 34px;
+}
+
+#contact-box input,#contact-box textarea{
+    width: 100%;
+    padding: 0.5rem;
+    border-radius: 9px;
+    font-size: 1.1rem;
+}
+
+#contact-box form{
+    width: 40%;
+}
+
+#contact-box label{
+    font-size: 1.3rem;
+    font-family: 'Bree Serif', serif;
+
+}
+footer{
+    background: black;
+    color: white;
+    padding: 9px 20px;
+}
+/*utility class*/
+.h-primary{
+    font-size: 2.rem;
+    padding: 12px;
+    font-family: 'Bree Serif', serif;
+}
+
+.h-secondary{
+    font-size: 2.3rem;
+    padding: 12px;
+    font-family: 'Bree Serif', serif;
+}
+.btn{
+    /*padding: 6px 20px;
+    border: 2px solid;
+    background-color: #f44366;
+    color: rgb(61, 12, 12);
+    margin: 17px; 
+    font-size: 1.5rem;
+    border-radius: 10px;
+    cursor: pointer;
+    align-items: center;*/
+    margin-top: 10px;
+    display: inline-block;
+    padding: 15px 50px;
+    color: #fff;
+    position: relative;
+    text-decoration: none;
+    font-size: 15px;
+    border: 1px solid #fff;
+    background: transparent;
+    cursor: pointer;
+    background-color: #f44366;
+    border-radius: 10px;
+}
+.btn:hover{
+    border: 1px solid #f44366;
+    transition: 0.2s;
+    color: black;
+    background: rgb(143, 59, 59);
+}
+
+
+.center{
+    text-align: center;
+}
+
+
+/*MENU*/
+
+.menu-spa{
+    margin-top: 40px;
+    text-align: center;
+    align-items: center;
+    font-weight: 25px;
+    text-transform: uppercase;
+}
+
+#menu-spicy{
+    margin: 34px;
+    display: flex;
+    flex-wrap: wrap;
+    cursor: pointer;
+}
+#menu-spicy .piz{
+    margin-left: 40px;
+    margin-right: 40px;
+    align-items: center;
+    border: 2px solid brown;
+    padding: 67px;
+    margin: 20px 6px;
+    border-radius: 28px;
+    background-color: #f2f2f2;
+}
+
+#menu-spicy .piz img{
+    height: 140px;
+    width: 210px;
+    margin: auto;
+    display: block;
+    border-radius: 30px;
+}
+
+#menu-spicy .piz p{
+    font-family: 'Bree Serif', serif;
+    color: black;
+    align-items: center;
+    text-align: center;
+}
+
+.menu-spa-1{
+    margin-top: 40px;
+    text-align: center;
+    align-items: center;
+    font-weight: 25px;
+    text-transform: uppercase;
+}
+
+#menu-spicy-1{
+    margin: 34px;
+    display: flex;
+    flex-wrap: wrap;
+    cursor: pointer;
+    margin-left: 73px;
+}
+#menu-spicy-1 .piz-1{
+    margin-left: 40px;
+    margin-right: 40px;
+    align-items: center;
+    border: 2px solid brown;
+    padding: 67px;
+    margin: 6px;
+    border-radius: 28px;
+    background-color: #f2f2f2;
+}
+
+#menu-spicy-1 .piz-1 img{
+    height: 80px;
+    width: 180px;
+    margin: auto;
+    display: block;
+    border-radius: 30px;
+}
+
+#menu-spicy-1 .piz-1 p{
+    font-family: 'Bree Serif', serif;
+    color: black;
+    align-items: center;
+    text-align: center;
+}
+

@@ -1,0 +1,88 @@
+/*
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.menu-spa{
+    margin-top: 40px;
+    text-align: center;
+    align-items: center;
+    font-weight: 25px;
+    text-transform: uppercase;
+}
+
+#menu-spicy{
+    margin: 34px;
+    display: flex;
+    flex-wrap: wrap;
+    cursor: pointer;
+}
+#menu-spicy .piz{
+    margin-left: 40px;
+    margin-right: 40px;
+    align-items: center;
+    border: 2px solid brown;
+    padding: 67px;
+    margin: 20px 6px;
+    border-radius: 28px;
+    background-color: #f2f2f2;
+}
+
+#menu-spicy .piz img{
+    height: 140px;
+    width: 210px;
+    margin: auto;
+    display: block;
+    border-radius: 30px;
+}
+
+#menu-spicy .piz p{
+    font-family: 'Bree Serif', serif;
+    color: black;
+    align-items: center;
+    text-align: center;
+}
+
+.menu-spa-1{
+    margin-top: 40px;
+    text-align: center;
+    align-items: center;
+    font-weight: 25px;
+    text-transform: uppercase;
+}
+
+#menu-spicy-1{
+    margin: 34px;
+    display: flex;
+    flex-wrap: wrap;
+    cursor: pointer;
+    margin-left: 73px;
+}
+#menu-spicy-1 .piz-1{
+    margin-left: 40px;
+    margin-right: 40px;
+    align-items: center;
+    border: 2px solid brown;
+    padding: 67px;
+    margin: 6px;
+    border-radius: 28px;
+    background-color: #f2f2f2;
+}
+
+#menu-spicy-1 .piz-1 img{
+    height: 80px;
+    width: 180px;
+    margin: auto;
+    display: block;
+    border-radius: 30px;
+}
+
+#menu-spicy-1 .piz-1 p{
+    font-family: 'Bree Serif', serif;
+    color: black;
+    align-items: center;
+    text-align: center;
+}
+
+*/

@@ -1,0 +1,101 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>  Online Food Delivery Service In India|contact | OnlineMeal.com</title>
+    <link rel="stylesheet" href="css/style.css">
+    
+  </head>
+  <body>
+    <nav id="navbar">
+      <div id="logo">
+          <img src="la.png" alt="my OnlineMeal">
+      </div>
+      <ul>
+          <li class="item"><a href="/index.html">Home</a></li>
+          <li class="item"><a href="/menu.html">Menu</a></li>
+          <li class="item"><a href="/about.html">About</a></li>
+          <li class="item"><a href="/contact.html">Order Now</a></li>
+      </ul>
+  </nav>
+  <section id="contact">
+    <h1 class="h-primary center">ORDER NOW</h1>
+    <div id="contact-box">
+        <form action="" onsubmit="sendEmail(); reset(); return false">
+            <div class="form-group">
+                <label for="name">Name</label>
+                <input type="text" name="name" id="name" placeholder="Enter Your Name" required>
+            </div>
+            <div class="form-group">
+                <label for="email">Email</label>
+                <input type="email" name="email" id="email" placeholder="Enter Your Email" required >
+            </div>
+            <div class="form-group">
+                <label for="phone">Phone No</label>
+                <input type="phone" name="email" id="phone" placeholder="Enter Your Phone No" required>
+            </div>
+            <div class="form-group">
+                <label for="name">Address</label>
+                <textarea name="message" id="message" placeholder="Enter Your Adderss" cols="25" rows="5"></textarea>
+            </div>
+            <button class="btn">Submit</button>
+        </form>
+    </div>
+</section>
+
+  <section class="menu-section-1">
+    <h1 class="menu-spa">ORDER STEPS</h1>
+    <div id="menu-spicy-1">
+        <div class="piz-1">
+            <img src="step-1.jpg" alt="">
+            <h2 class="menu-spa-1">Choose</h2>
+            <p>Choose The Food</p>
+        </div>
+        <div class="piz-1">
+         <img src="/step-2.jpg" alt="">
+         <h2 class="menu-spa-1">Delivery</h2>
+         <p>Out for delivery</p>
+     </div>
+     <div class="piz-1">
+         <img src="/step-3.jpg" alt="">
+         <h2 class="menu-spa-1">Payment</h2>
+         <p>Thanks</p>
+     </div>
+     <div class="piz-1">
+         <img src="/step-4.jpg" alt="">
+         <h2 class="menu-spa-1">Enjoy</h2>
+         <p>Enjoy Our Food</p>
+     </div>
+    </div>
+</section>
+
+
+
+<footer>
+    <div class="center">
+        Copyright &copy; emran.com|All right reverse
+    </div>
+</footer>
+
+    <script src=" https://smtpjs.com/v3/smtp.js"></script>
+    <script>
+        function sendEmail() {
+            Email.send({
+                Host : "smtp.gmail.com",
+                Username : "",
+                Password : "",
+                To : '',
+                From : document.getElementById("email").value,
+                Subject : "Order Enquiry Form",
+                Body : "Name: " + document.getElementById("name").value
+                + "<br> Email: " + document.getElementById("email").value
+                + "<br> Phone No: " + document.getElementById("phone").value
+                + "<br> Address: " + document.getElementById("message").value
+            }).then(
+            message => alert("Order Submitted")
+            );
+        }
+    </script>
+  </body>
+</html>
